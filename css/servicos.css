@@ -1,0 +1,114 @@
+/* Estilos personalizados para servicos.html */
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+p.lead,
+.card-text {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #444;
+}
+
+footer {
+    font-size: 0.95rem;
+    background-color: #212529;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer a {
+    transition: color 0.2s ease-in-out;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+/* Navegação */
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link.fw-bold,
+.nav-link.active {
+    color: #0d6efd !important;
+}
+
+.nav-link:hover {
+    color: #0b5ed7;
+}
+
+/* Responsividade adicional */
+@media (max-width: 767px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+}
